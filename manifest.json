@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "500 Mark Done",
+  "description": "This extension is to mark what questions you have completed",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://techiedelight.quora.com/500-Data-structures-and-algorithms-interview-questions-and-their-solutions"
+      ],
+      "js": ["jquery-3.2.1.min.js", "main.js"]
+    }
+  ]
+}
