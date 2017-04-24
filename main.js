@@ -12,7 +12,7 @@ $(document).ready(function() {
 	});
 
 
-	//handles storage in localStorage to remeber what has been complete
+	//handles storage in localStorage to remeber what has been completed
 	$('input[type="checkbox"][name="questionNumber"]').change(function() {
 		if(this.checked) {
 			var localStorageCurrently = localStorage.getItem("questionComplete");
