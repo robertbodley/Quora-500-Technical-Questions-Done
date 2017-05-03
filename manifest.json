@@ -7,7 +7,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://techiedelight.quora.com/500-Data-structures-and-algorithms-interview-questions-and-their-solutions"
+        "https://techiedelight.quora.com/500-Data-structures-and-algorithms-interview-questions-and-their-solutions",
+        "https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions"
       ],
       "js": ["jquery-3.2.1.min.js", "main.js"]
     }
