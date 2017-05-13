@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var count = 0;
 	$(".qlink_container").each(function( index ) {
 		var localStorageCurrently = localStorage.getItem("questionComplete");
-		if(localStorageCurrently!=null && localStorageCurrently.indexOf(question + ",") !== -1) {
+		if(localStorageCurrently!=null && localStorageCurrently.indexOf("," + question + ",") !== -1) {
 			var html = "<input type='checkbox' checked name='questionNumber' value='" + question + "'> " + $(this).html();
 			count++;
 		} else {
@@ -26,7 +26,7 @@ $(document).ready(function() {
 			var localStorageCurrently = localStorage.getItem("questionComplete");
 			var questionNumber = $(this).val();
 
-			var questionComplete = localStorageCurrently + questionNumber + ",";
+			var questionComplete = localStorageCurrently + "," + questionNumber + ",";
 
 			localStorage.setItem("questionComplete", questionComplete);
 		} else {
@@ -35,7 +35,7 @@ $(document).ready(function() {
 			var localStorageCurrently = localStorage.getItem("questionComplete");
 			var questionNumber = $(this).val();
 
-			var questionComplete = localStorageCurrently.replace(questionNumber+",", "");
+			var questionComplete = localStorageCurrently.replace("," + questionNumber + ",", "");
 			localStorage.setItem("questionComplete", questionComplete);
 
 
